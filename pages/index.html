@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- reset css -->
+     <link rel="stylesheet" href="./assets/css/reset.css">
+     <!-- styles -->
+      
+      <link rel="stylesheet" href="/assets/css/styles.css">
+      <link rel="stylesheet" href="/src/output.css">
+</head>
+<body >
+    
+    <div class="container mx-10" >
+        <h1 class="bg-purple-300 text-center my-5 h-10" >Daily Weather</h1>
+        <div class="flex flex-row weather-input my-5">
+            <h3 class=""> Search for your preffered city...</h3>
+            <input class="content-end city-input " type="text" placeholder="Enter City Name">
+            <button class="search-btn">Search</button>
+          </div>
+          <div class="w-96 weather-data bg-red-400">
+            <div class="current-weather bg-blue-500">
+                <div class="details ">
+                    <h2 class="mx-2">Today's Weather</h2>
+                    <h6  class="mx-2">Temperature: ___°F</h6>
+                    <h6  class="mx-2">Description: </h6>
+                    <h6  class="mx-2">Wind Speed: ___ mph</h6>
+                    <h6  class="mx-2">Humidity: ___%</h6>
+                </div>
+            </div>
+            <div class="days-forecast">
+                <h2  class="mx-2"> Five Day Forecast</h2>
+                <ul class="flex flex-row weather-cards">
+                    <li class="border-4 border-stone-300 card bg-green-400 my-2">
+                        <h3  class="mx-2">Description: </h3>
+                        <h6  class="mx-2">Temperature: ___°F</h6>
+                        <h6  class="mx-2">Wind: ___mph</h6>
+                        <h6  class="mx-2">Humidity: ___%</h6>
+                    </li>
+                    <li class="border-4 border-stone-300 card bg-green-400 my-2">
+                        <h3  class="mx-2">Description: </h3>
+                        <h6  class="mx-2">Temperature: ___°F</h6>
+                        <h6  class="mx-2">Wind: ___mph</h6>
+                        <h6  class="mx-2">Humidity: ___%</h6>
+                    </li>
+                    <li class="border-4 border-stone-300 card bg-green-400 my-2">
+                        <h3  class="mx-2">Description: </h3>
+                        <h6  class="mx-2">Temperature: ___°F</h6>
+                        <h6  class="mx-2">Wind: ___mph</h6>
+                        <h6  class="mx-2">Humidity: ___%</h6>
+                    </li>
+                    <li class="border-4 border-stone-300 card bg-green-400 my-2">
+                        <h3  class="mx-2">Description: </h3>
+                        <h6  class="mx-2">Temperature: ___°F</h6>
+                        <h6  class="mx-2">Wind: ___mph</h6>
+                        <h6  class="mx-2">Humidity: ___%</h6>
+                    </li>
+                    <li class="border-4 border-stone-300 card bg-green-400 my-2">
+                        <h3  class="mx-2">Description: </h3>
+                        <h6  class="mx-2">Temperature: ___°F</h6>
+                        <h6  class="mx-2">Wind: ___mph</h6>
+                        <h6  class="mx-2">Humidity: ___%</h6>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>
