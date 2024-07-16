@@ -11,28 +11,28 @@
       <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
       <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-gradient-to-l from-cyan-500 to-blue-500 mx-auto">
+<body class="bg-gradient-to-l from-cyan-500 to-blue-500 mx-auto font-mono sm:w-80">
     
-    <div class="container mx-10">
-        <h1 class=" bg-gradient-to-l from-pink-200 to-purple-500 text-center my-5 h-10 border rounded-lg shadow-md shadow-slate-200">Daily Weather</h1>
-        <div class="flex flex-row weather-input my-5">
+    <div class="container lg:mx-10">
+        <h1 class="sm:w-80 bg-gradient-to-l from-pink-200 to-purple-500 text-center my-5 h-10 border rounded-lg shadow-md shadow-slate-200">Daily Weather</h1>
+        <div class="flex sm:flex-col lg:flex-row weather-input my-5">
             <h3 class=""> Search for your preffered city...</h3>
-            <input class="content-end city-input " type="text" placeholder="Enter City Name">
-            <button class="search-btn">Search</button>
+            <input class="content-end city-input sm:w-80" type="text" placeholder="Enter City Name">
+            <button class="search-btn sm:w-80 bg-indigo-300">Search</button>
           </div>
           <div class="flex flex-col w-100 weather-data space-y-4 ">
-            <div class="current-weather bg-gradient-to-l from-yellow-100 to-yellow-500 border rounded-lg shadow-md shadow-slate-200">
+            <div class="sm:w-80 current-weather bg-gradient-to-l from-yellow-100 to-yellow-500 border rounded-lg shadow-md shadow-slate-200">
                 <h2 class="mx-2 text-center">Today's Weather</h2>
-                <div class="details flex flex-row space-x-4 mx-60 place-items-center">
+                <div class="details flex sm:flex-col lg:flex-row space-x-4 lg:mx-60 lg:place-items-center">
                     <h6  class="mx-2">Temperature: ___°F</h6>
                     <h6  class="mx-2">Description: </h6>
                     <h6  class="mx-2">Wind Speed: ___ mph</h6>
                     <h6  class="mx-2">Humidity: ___%</h6>
                 </div>
             </div>
-            <div class="days-forecast bg-gradient-to-l from-orange-300 to-red-500 border rounded-lg shadow-md shadow-slate-200 ">
+            <div class="sm:w-80 days-forecast bg-gradient-to-l from-orange-300 to-red-500 border rounded-lg shadow-md shadow-slate-200 ">
                 <h2  class="mx-2 rounded-full text-center"> Five Day Forecast</h2>
-                <ul class="flex flex-row space-x-4 weather-cards mx-60">
+                <ul class="  sm:flex sm:flex-col lg:flex lg:flex-row lg:space-x-4 lg:weather-cards lg:mx-60">
                     <li class="border-2 border-stone-300 card bg-gradient-to-l from-cyan-300 to-green-500 shadow-sm shadow-slate-200  my-2 rounded-md">
                         <h3  class="mx-2">Description: </h3>
                         <h6  class="mx-2">Temperature: ___°F</h6>
