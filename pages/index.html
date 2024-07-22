@@ -8,16 +8,25 @@
      <link rel="stylesheet" href="./assets/css/reset.css">
      <!-- styles -->
     <link rel="stylesheet" href="../src/output.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-l from-cyan-500 to-blue-500 dark:bg-black mx-auto font:mono w-auto">
+<!-- PAGE BACKGROUND COLOR - INCLUDES A CLASS WITH OPTIONAL DARK MODE FEATURE (class="dark:bg-black") -->
+<body class="bg-gradient-to-l from-cyan-500 to-blue-500 dark:bg-black mx-auto w-auto font:courier">
     <div class="container">
+        <!-- DAILY WEATHER ICON -->
         <h1 class="bg-gradient-to-l from-pink-200 to-purple-500 text-center w-80 mx-auto my-5 h-10 border rounded-lg shadow-md shadow-slate-200 sm:w-full lg:w-full">Daily Weather</h1>
         <div class="weather-input inline-block flex flex-col my-5 mx-auto w-80 sm:flex-row sm:w-full sm:mx-2">
              <h3 class=" place-items-stretch space-x-4">Search for your preffered city...</h3>
+             <!-- SEARCH BAR (class="city-input")-->
             <input class="city-input space-x-4 content-end h-8 w-60 my-2 sm:my-0 md:mx-2 md:w-80 lg:w-full max-w-80 md:h-10 lg:mx" type="text" placeholder="Enter City Name">
+            <!-- SEARCH BUTTON (class="search-btn") -->
             <button class="search-btn space-x-4 bg-indigo-300 border-2 border-stone-300 rounded-xl h-8 my-2 md:h-10 sm:my-0 sm:mx-2 w-20 md:h-10 sm:w-32 lg:w-full max-w-24 ">Search</button>
         </div> 
+        <!-- TODAY'S WEATHER ICON -->
         <div class="weather-data flex flex-col space-y-4 mx-auto w-80 sm:w-auto  lg:w-auto ">
+            <!-- BACKGROUND COLOR OF ICON -->
             <div class="current-weather sm:w-full md:w-full lg:w-full bg-gradient-to-l from-yellow-100 to-yellow-500 border rounded-lg shadow-md shadow-slate-200">
                 <h2 class="text-center mx-2">Today's Weather</h2>
                 <div class="details flex flex-col w-full mx-auto space-x-auto sm:flex sm:flex-row">
@@ -28,9 +37,12 @@
                 </div>
             </div>
         </div>
+        <!-- FIVE DAY FORECAST ICON  -->
         <div class="days-forecast bg-gradient-to-l from-orange-300 to-red-500 border rounded-lg shadow-md shadow-slate-200 my-5 w-80 mx-auto sm:w-full">
                 <h2  class="mx-2 rounded-full text-center">Five Day Forecast</h2>
+                <!-- WEATHER CARD ICONS -->
                 <ul class= "weather-cards flex flex-col mx-4 space-y-auto">
+                    <!-- WEATHER CARD ICON (class="card") -->
                     <li class="card border-2 border-stone-300 bg-gradient-to-l from-cyan-300 to-green-500 shadow-sm shadow-slate-200 my-2 rounded-lg sm:flex sm:flex-row">
                         <h3  class="mx-2 sm:mx-auto">Description: </h3>
                         <h6  class="mx-2 sm:mx-auto">Temperature: ___°F</h6>
