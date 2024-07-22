@@ -1,3 +1,4 @@
 #IDE CONFIGURATION FILE
 .idea
 .DS_Store
+node_modules
