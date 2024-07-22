@@ -8,7 +8,10 @@ module.exports = {
      'mono' : ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
      'display': ['Oswald'],
      'body': ['Open Sans'],
+     'libre': ['Libre Baskerville', 'Roboto', 'Cambria']
     },
+
+// Other configuration options...
 
     container: {
       center: true,
@@ -30,5 +33,5 @@ module.exports = {
    './pages/*.{html,js}'
    
   ]
-  // Other configuration options...
+  
 }; 
