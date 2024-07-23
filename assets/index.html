@@ -5,65 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <!-- reset css -->
-     <link rel="stylesheet" href="./assets/css/reset.css">
+     <link rel="stylesheet" href="../assets/css/reset.css">
      <!-- styles -->
-      <link rel="stylesheet" href="./assets/css/styles.css">
+      
+      <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+      <link rel="stylesheet" href="../src/output.css">
 </head>
-<body>
-    <h1>Daily Weather</h1>
-    <div class="container">
-        <div class="weather-input">
-            <h3> Search for your preffered city...</h3>
-            <input class="city-input" type="text" placeholder="Enter City Name">
-            <button class="search-btn">Search</button>
+<body class="bg-gradient-to-l from-cyan-500 to-blue-500">
+    
+    <div class="container mx-10">
+        <h1 class=" bg-gradient-to-l from-pink-200 to-purple-500 text-center my-5 h-10" >Daily Weather</h1>
+        <div class="flex flex-row weather-input my-5">
+            <h3 class="search"> Search for your preffered city...</h3>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="getWeatherBtn">Get Weather and 5 Days Forecast</button>
           </div>
-          <div class="weather-data">
-            <div class="current-weather">
-                <div class="details">
-                    <h2>Today's Weather</h2>
-                    <h6>Temperature: ___°F</h6>
-                    <h6>Description: </h6>
-                    <h6>Wind Speed: ___ mph</h6>
-                    <h6>Humidity: ___%</h6>
+          <div class="flex flex-col w-100 weather-data space-y-4 ">
+            <div class="current-weather bg-gradient-to-l from-yellow-100 to-yellow-500 border-2 rounded-lg">
+                <h2 class="mx-2 text-center">Today's Weather</h2>
+                <div id="currentWeatherContainer">
+                    <h3>Current Weather</h3>
+                    <div id="currentWeather" class="weather-card"></div>
                 </div>
             </div>
-            <div class="days-forecast">
-                <h2> Five Day Forecast</h2>
-                <ul class="weather-cards">
-                    <li class="card">
-                        <h3>Description: </h3>
-                        <h6>Temperature: ___°F</h6>
-                        <h6>Wind: ___mph</h6>
-                        <h6>Humidity: ___%</h6>
-                    </li>
-                    <li class="card">
-                        <h3>Description: </h3>
-                        <h6>Temperature: ___°F</h6>
-                        <h6>Wind: ___mph</h6>
-                        <h6>Humidity: ___%</h6>
-                    </li>
-                    <li class="card">
-                        <h3>Description: </h3>
-                        <h6>Temperature: ___°F</h6>
-                        <h6>Wind: ___mph</h6>
-                        <h6>Humidity: ___%</h6>
-                    </li>
-                    <li class="card">
-                        <h3>Description: </h3>
-                        <h6>Temperature: ___°F</h6>
-                        <h6>Wind: ___mph</h6>
-                        <h6>Humidity: ___%</h6>
-                    </li>
-                    <li class="card">
-                        <h3>Description: </h3>
-                        <h6>Temperature: ___°F</h6>
-                        <h6>Wind: ___mph</h6>
-                        <h6>Humidity: ___%</h6>
-                    </li>
-                </ul>
+            <div class="days-forecast bg-gradient-to-l from-orange-300 to-red-500 border-2 rounded-lg">
+                <div id="forecastWeatherContainer">
+                    <h3>5 Days Forecast</h3>
+                    <div id="forecastWeather" class="forecast-cards"></div>
+                </div>
             </div>
           </div>
     </div>
+    <script src="../assets/scritp.js"></script>
+</body>
+</html>
     
 </body>
 </html>
