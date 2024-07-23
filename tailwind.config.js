@@ -30,8 +30,9 @@ module.exports = {
   },
 
   content: [
-   './pages/*.{html,js}'
-   
+   './pages/*.{html,js}',
+   './assets/*.{html,js}'
+
   ]
   
 }; 
