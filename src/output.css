@@ -598,6 +598,11 @@ video {
   }
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -665,6 +670,10 @@ video {
 
 .max-w-80 {
   max-width: 20rem;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
